@@ -22,12 +22,16 @@ import numpy as np
 import networkx as nx
 import tntools_max_clique as tnt_mc
 
+n = 8 # number of nodes
+p = 0.1 # edge probability
+chi=32 # bond dimension precision, complexity scaling O(chi^8)
+
+
 # Getting adjacency matrix of random graph
 g = nx.fast_gnp_random_graph(n=n, p=p)
 adj_mat = nx.to_numpy_array(g)
 
 # Apply method
-chi=32 # bond dimension precision, complexity scaling O(chi^8)
 max_clique, _, _ = tnt_mc.max_clique_solver(adj_mat, max_chi=chi, dmrg_chi=chi)
 ```
 
