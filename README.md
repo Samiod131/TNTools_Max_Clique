@@ -1,4 +1,4 @@
-# Tensor-Max-Clique
+# TNTools_Max_Clique
 An algorithm to find the maximum clique (equivalent to independent set) of a graph approximatively using the [TNTools](https://github.com/Samiod131/TNTools) library.
 
 This lib was developped as I was doing my master thesis. 
